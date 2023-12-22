@@ -1,0 +1,88 @@
+{
+	"tempHash": "00E48ADB3737BA0F",
+	"tbluHash": "003F67082933C74F",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"SetName": "Mesh_Hands"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"SetFactory": "[modules:/zbodypartentity.class].pc_entitytype"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"SetBlueprint": "[modules:/zbodypartentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"RemovePropertyByName": "Diffuse_Color_01_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"RemovePropertyByName": "Texture2D_03"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"RemovePropertyByName": "ConstantVector1D_05_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"RemovePropertyByName": "ConstantVector1D_04_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"RemovePropertyByName": "ConstantVector1D_01_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"8aa74401b4abd31a",
+				{
+					"AddProperty": [
+						"m_pMeshResource",
+						{
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "00DB8820BADBDB39",
+								"flag": "5F"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
