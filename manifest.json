@@ -7,5 +7,127 @@
 	"frameworkVersion": "2.33.6",
 	"version": "1.0.0",
 	"contentFolders": ["base"],
-	"updateCheck": "https://github.com/JojjeE/h3-slim-streak-suits/releases/latest/download/updates.json"
+	"updateCheck": "https://github.com/JojjeE/h3-slim-streak-suits/releases/latest/download/updates.json",
+	"options": [
+		{
+			"group": "Variant - Black Streak - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - Black Streak - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/black_streak/gloves/leather"]
+		},
+		{
+			"group": "Variant - Black Streak - Gloves",
+			"name": "Bare hands.",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/black_streak/gloves/hands"]
+		},
+		{
+			"group": "Variant - Blue Streak - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - Blue Streak - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/blue_streak/gloves/leather"]
+		},
+		{
+			"group": "Variant - Blue Streak - Gloves",
+			"name": "Bare hands.",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/blue_streak/gloves/hands"]
+		},
+		{
+			"group": "Variant - Green Streak - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - Green Streak - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/green_streak/gloves/leather"]
+		},
+		{
+			"group": "Variant - Green Streak - Gloves",
+			"name": "Bare hands.",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/green_streak/gloves/hands"]
+		},
+		{
+			"group": "Variant - White Sunset - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - White Sunset - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/red_streak/gloves/leather"]
+		},
+		{
+			"group": "Variant - White Sunset - Gloves",
+			"name": "Bare hands",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/red_streak/gloves/hands"]
+		},
+		{
+			"group": "Variant - Purple Streak - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - Purple Streak - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/purple_streak/gloves/leather"]
+		},
+		{
+			"group": "Variant - Purple Streak - Gloves",
+			"name": "Bare hands",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/purple_streak/gloves/hands"]
+		}
+	]
 }

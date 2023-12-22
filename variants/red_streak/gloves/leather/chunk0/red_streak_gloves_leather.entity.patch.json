@@ -1,0 +1,74 @@
+{
+	"tempHash": "00CAF7E56803D800",
+	"tbluHash": "008F6B7E10F1597D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"SetName": "Gloves_Leather"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"SetFactory": "00BEE701448762C1"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"SetBlueprint": "005D2B1CBD509E61"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"RemovePropertyByName": "Texture2D_03"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"RemovePropertyByName": "ConstantVector1D_05_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"RemovePropertyByName": "ConstantVector1D_04_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"RemovePropertyByName": "ConstantVector1D_01_Value"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"5561ac32a0fad2cf",
+				{
+					"SetPropertyValue": {
+						"property_name": "Diffuse_Color_01_Value",
+						"value": "#2e2e2e"
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
