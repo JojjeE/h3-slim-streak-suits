@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
 	"id": "Jojje.SlimStreakSuits",
-	"name": "Slims down the Streak suits",
+	"name": "Slim Streak Suits",
 	"description": "Alter the Streak suits to use the Hitman 2 slim fit signature suit models.",
 	"authors": ["Jojje"],
 	"frameworkVersion": "2.33.6",
