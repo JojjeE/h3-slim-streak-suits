@@ -10,6 +10,46 @@
 	"updateCheck": "https://github.com/JojjeE/h3-slim-streak-suits/releases/latest/download/updates.json",
 	"options": [
 		{
+			"group": "Install",
+			"name": "Black Streak",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Replace the Black Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"contentFolders": ["suits/black_streak"]
+		},
+		{
+			"group": "Install",
+			"name": "Blue Streak",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Replace the Blue Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"contentFolders": ["suits/blue_streak"]
+		},
+		{
+			"group": "Install",
+			"name": "Green Streak",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Replace the Green Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"contentFolders": ["suits/green_streak"]
+		},
+		{
+			"group": "Install",
+			"name": "White Sunset",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Replace the White Sunset. Don't pick a variant for this suit if you disable it or things might break.",
+			"contentFolders": ["suits/red_streak"]
+		},
+		{
+			"group": "Install",
+			"name": "Purple Streak",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Replace the Purple Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"contentFolders": ["suits/purple_streak"]
+		},
+		{
 			"group": "Variant - Black Streak - Gloves",
 			"name": "Driving gloves (Default)",
 			"type": "select",
