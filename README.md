@@ -6,4 +6,4 @@ Alter the Streak suits to use the Hitman 2 slim fit signature suit models.
 
 ---
 
-`Jojje.SlimStreakSuits` v1.1.0, by Jojje. This README was automatically generated from the mod's manifest.
+`Jojje.SlimStreakSuits` v1.2.0, by Jojje. This README was automatically generated from the mod's manifest.
