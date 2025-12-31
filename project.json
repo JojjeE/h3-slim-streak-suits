@@ -1,12 +1,5 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/quickentity-editor-next/main/src/lib/project-schema.json",
-	"customPaths": [],
-	"treeViewState": {
-		"00FEC145343DFC4F": { "selectedEntity": "a080a4889f42c006", "expandedNodes": ["9e1ea83da4d606e1"] },
-		"00A7D1A961EB93C4": { "expandedNodes": ["106564006ba9b2d2"] },
-		"00E48ADB3737BA0F": { "expandedNodes": ["7f05f2e84b82c29f"] },
-		"00E78D4DDE59E57D": { "expandedNodes": ["ae0091f3b2b2ef34"], "selectedEntity": "15a61859bf9e2784" },
-		"00CAF7E56803D800": { "expandedNodes": ["15bfb2c2c70bbd00"] },
-		"0067E6E6596F8175": { "expandedNodes": ["061fccbd164422a2"], "selectedEntity": "6f297c030d779977" }
-	}
+	"customPaths": [
+		"[assembly:/_pro/characters/assets/hero/agent47_outfits/agent47_reward_s2elusive/geometry/agent47_reward_s2elusive.wl2?/agent47_suit_notie_anisotropic.weightedprim](bodypart).pc_weightedprim"
+	]
 }

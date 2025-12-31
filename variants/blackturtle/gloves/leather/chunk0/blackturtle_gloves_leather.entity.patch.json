@@ -1,0 +1,49 @@
+{
+	"tempHash": "0066BDFA48AD6EA9",
+	"tbluHash": "0070ECEA1149A60D",
+	"patch": [
+		{
+			"SubEntityOperation": ["837035188f11c413", { "SetName": "Gloves_Leather" }]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"SetFactory": "[assembly:/_pro/characters/templates/_part_library/male_apparel/male_reg_apparel_hands.template?/gloves_leather.entitytemplate].pc_entitytype"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"SetBlueprint": "[assembly:/_pro/characters/templates/_part_library/male_apparel/male_reg_apparel_hands.template?/gloves_leather.entitytemplate].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "Texture2D_03" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_05_Value" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_04_Value" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_01_Value" }]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"SetPropertyValue": {
+						"property_name": "Diffuse_Color_01_Value",
+						"value": "#2e2e2e"
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

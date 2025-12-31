@@ -14,7 +14,7 @@
 			"name": "Black Streak",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"tooltip": "Replace the Black Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"tooltip": "Slim down the Black Streak.",
 			"contentFolders": ["suits/black_streak"]
 		},
 		{
@@ -22,7 +22,7 @@
 			"name": "Blue Streak",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"tooltip": "Replace the Blue Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"tooltip": "Slim down the Blue Streak.",
 			"contentFolders": ["suits/blue_streak"]
 		},
 		{
@@ -30,7 +30,7 @@
 			"name": "Green Streak",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"tooltip": "Replace the Green Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"tooltip": "Slim down the Green Streak.",
 			"contentFolders": ["suits/green_streak"]
 		},
 		{
@@ -38,7 +38,7 @@
 			"name": "White Sunset",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"tooltip": "Replace the White Sunset. Don't pick a variant for this suit if you disable it or things might break.",
+			"tooltip": "Slim down the White Sunset.",
 			"contentFolders": ["suits/red_streak"]
 		},
 		{
@@ -46,8 +46,16 @@
 			"name": "Purple Streak",
 			"type": "checkbox",
 			"enabledByDefault": true,
-			"tooltip": "Replace the Purple Streak. Don't pick a variant for this suit if you disable it or things might break.",
+			"tooltip": "Slim down the Purple Streak.",
 			"contentFolders": ["suits/purple_streak"]
+		},
+		{
+			"group": "Install",
+			"name": "Black Turtle Streak",
+			"type": "checkbox",
+			"enabledByDefault": true,
+			"tooltip": "Slim down the Black Turtle Streak.",
+			"contentFolders": ["suits/blackturtle"]
 		},
 		{
 			"group": "Variant - Black Streak - Gloves",
@@ -168,6 +176,30 @@
 			"tooltip": "Bare hands.",
 			"image": "barehands.jpg",
 			"contentFolders": ["variants/purple_streak/gloves/hands"]
+		},
+		{
+			"group": "Variant - Black Turtle Streak - Gloves",
+			"name": "Driving gloves (Default)",
+			"type": "select",
+			"enabledByDefault": true,
+			"tooltip": "Use driving gloves.",
+			"image": "drivinggloves.jpg"
+		},
+		{
+			"group": "Variant - Black Turtle Streak - Gloves",
+			"name": "Leather gloves",
+			"type": "select",
+			"tooltip": "Use leather gloves.",
+			"image": "leathergloves.jpg",
+			"contentFolders": ["variants/blackturtle/gloves/leather"]
+		},
+		{
+			"group": "Variant - Black Turtle Streak - Gloves",
+			"name": "Bare hands",
+			"type": "select",
+			"tooltip": "Bare hands.",
+			"image": "barehands.jpg",
+			"contentFolders": ["variants/blackturtle/gloves/hands"]
 		}
 	]
 }

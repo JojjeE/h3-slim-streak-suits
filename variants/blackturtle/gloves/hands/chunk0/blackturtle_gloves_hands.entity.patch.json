@@ -1,0 +1,58 @@
+{
+	"tempHash": "0066BDFA48AD6EA9",
+	"tbluHash": "0070ECEA1149A60D",
+	"patch": [
+		{
+			"SubEntityOperation": ["837035188f11c413", { "SetName": "Mesh_Hands" }]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"SetFactory": "[modules:/zbodypartentity.class].pc_entitytype"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"SetBlueprint": "[modules:/zbodypartentity.class].pc_entityblueprint"
+				}
+			]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "Diffuse_Color_01_Value" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "Texture2D_03" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_05_Value" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_04_Value" }]
+		},
+		{
+			"SubEntityOperation": ["837035188f11c413", { "RemovePropertyByName": "ConstantVector1D_01_Value" }]
+		},
+		{
+			"SubEntityOperation": [
+				"837035188f11c413",
+				{
+					"AddProperty": [
+						"m_pMeshResource",
+						{
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/characters/assets/_sourcefiles/male_reg/geometry/male_reg.wl2?/hands.weightedprim](bodypart).pc_weightedprim",
+								"flag": "5F"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}

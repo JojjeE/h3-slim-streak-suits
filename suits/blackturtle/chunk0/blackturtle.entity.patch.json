@@ -1,0 +1,21 @@
+{
+	"tempHash": "0066BDFA48AD6EA9",
+	"tbluHash": "0070ECEA1149A60D",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"8145d67d7819b6b7",
+				{
+					"SetPropertyValue": {
+						"property_name": "m_pMeshResource",
+						"value": {
+							"resource": "[assembly:/_pro/characters/assets/hero/agent47_outfits/agent47_reward_s2elusive/geometry/agent47_reward_s2elusive.wl2?/agent47_suit_notie_anisotropic.weightedprim](bodypart).pc_weightedprim",
+							"flag": "5F"
+						}
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
