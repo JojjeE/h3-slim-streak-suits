@@ -1,0 +1,47 @@
+{
+	"tempHash": "00A7D1A961EB93C4",
+	"tbluHash": "00188E2FF2D91184",
+	"patch": [
+		{ "RemoveEntityByID": "abcdfad045c8e9e9" },
+		{ "RemoveEntityByID": "abcd9edf169b68de" },
+		{
+			"SubEntityOperation": [
+				"106564006ba9b2d2",
+				{
+					"PatchArrayPropertyValue": [
+						"m_aBodyParts",
+						[
+							{ "RemoveItemByValue": "abcdfad045c8e9e9" },
+							{ "AddItemAfter": ["00dc16135f64ef4f", "b4344f583b49d5aa"] }
+						]
+					]
+				}
+			]
+		},
+		{
+			"AddEntity": [
+				"b4344f583b49d5aa",
+				{
+					"parent": "106564006ba9b2d2",
+					"name": "Agent47_Gloves_Driving",
+					"factory": "[assembly:/_pro/characters/templates/_part_library/male_apparel/agent47_apparel.template?/agent47_gloves_driving.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/characters/templates/_part_library/male_apparel/agent47_apparel.template?/agent47_gloves_driving.entitytemplate].pc_entityblueprint",
+					"properties": {
+						"Diffuse_Color_01_Value": { "type": "SColorRGB", "value": "#171717" },
+						"Texture2D_03": {
+							"type": "ZRuntimeResourceID",
+							"value": {
+								"resource": "[assembly:/_pro/characters/assets/hero/agent47/textures/agent47_gloves.texture?/specular_b.tex](ascolormap).pc_tex",
+								"flag": "5F"
+							}
+						},
+						"ConstantVector1D_05_Value": { "type": "float32", "value": 0.2800000011920929 },
+						"ConstantVector1D_04_Value": { "type": "float32", "value": 0.09000000357627869 },
+						"ConstantVector1D_01_Value": { "type": "float32", "value": 13.84000015258789 }
+					}
+				}
+			]
+		}
+	],
+	"patchVersion": 6
+}
