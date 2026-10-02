@@ -1,212 +1,344 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+	"$schema": "../../manifest-schema.json",
 	"id": "Jojje.SlimStreakSuits",
 	"name": "Slim Streak Suits",
 	"description": "Alter the Streak suits to use the Hitman 2 slim fit signature suit models.",
 	"authors": ["Jojje"],
-	"frameworkVersion": "2.33.33",
 	"version": "1.3.0",
-	"contentFolders": ["base"],
-	"updateCheck": "https://github.com/JojjeE/h3-slim-streak-suits/releases/latest/download/updates.json",
-	"loadAfter": ["Atampy26.InvertedStreakSuits"],
+	"frameworkVersion": "3.0.0-rc.1",
+	"url": "https://github.com/JojjeE/h3-slim-streak-suits",
+	"conditions": { "supportedGames": ["h3"] },
+	"data": {
+		"contentFolders": ["base"],
+		"deployAfter": ["Atampy26.InvertedStreakSuits@^1.0.0"]
+	},
 	"options": [
 		{
+			"id": "inverted-streak-compatibility",
 			"type": "conditional",
-			"name": "Inverted Streak Suit Compatibility",
-			"condition": "\"Atampy26.InvertedStreakSuits\" in config.loadOrder",
-			"contentFolders": ["compatibility"]
+			"data": {
+				"contentFolders": ["compatibility"]
+			},
+			"condition": "mod_enabled(\"Atampy26.InvertedStreakSuits@1.0.0\")"
 		},
 		{
-			"group": "Install",
+			"id": "black",
+			"type": "boolean",
 			"name": "Black Streak",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the Black Streak.",
-			"contentFolders": ["suits/black_streak"]
+			"description": "Slim down the Black Streak.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/black_streak"] }
 		},
 		{
-			"group": "Install",
+			"id": "blue",
+			"type": "boolean",
 			"name": "Blue Streak",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the Blue Streak.",
-			"contentFolders": ["suits/blue_streak"]
+			"description": "Slim down the Blue Streak.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/blue_streak"] }
 		},
 		{
-			"group": "Install",
+			"id": "green",
+			"type": "boolean",
 			"name": "Green Streak",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the Green Streak.",
-			"contentFolders": ["suits/green_streak"]
+			"description": "Slim down the Green Streak.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/green_streak"] }
 		},
 		{
-			"group": "Install",
+			"id": "whitesunset",
+			"type": "boolean",
 			"name": "White Sunset",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the White Sunset.",
-			"contentFolders": ["suits/red_streak"]
+			"description": "Slim down the White Sunset.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/red_streak"] }
 		},
 		{
-			"group": "Install",
+			"id": "purple",
+			"type": "boolean",
 			"name": "Purple Streak",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the Purple Streak.",
-			"contentFolders": ["suits/purple_streak"]
+			"description": "Slim down the Purple Streak.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/purple_streak"] }
 		},
 		{
-			"group": "Install",
+			"id": "blackturtle",
+			"type": "boolean",
 			"name": "Black Turtle Streak",
-			"type": "checkbox",
-			"enabledByDefault": true,
-			"tooltip": "Slim down the Black Turtle Streak.",
-			"contentFolders": ["suits/blackturtle"]
+			"description": "Slim down the Black Turtle Streak.",
+			"defaultValue": true,
+			"data": { "contentFolders": ["suits/blackturtle"] }
 		},
 		{
-			"group": "Variant - Black Streak - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - Black Streak - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/black_streak/gloves/leather"]
-		},
-		{
-			"group": "Variant - Black Streak - Gloves",
-			"name": "Bare hands.",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/black_streak/gloves/hands"]
-		},
-		{
-			"group": "Variant - Blue Streak - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - Blue Streak - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/blue_streak/gloves/leather"]
-		},
-		{
-			"group": "Variant - Blue Streak - Gloves",
-			"name": "Bare hands.",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/blue_streak/gloves/hands"]
-		},
-		{
-			"group": "Variant - Green Streak - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - Green Streak - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/green_streak/gloves/leather"]
-		},
-		{
-			"group": "Variant - Green Streak - Gloves",
-			"name": "Bare hands.",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/green_streak/gloves/hands"]
-		},
-		{
-			"group": "Variant - White Sunset - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - White Sunset - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/red_streak/gloves/leather"]
-		},
-		{
-			"group": "Variant - White Sunset - Gloves",
-			"name": "Bare hands",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/red_streak/gloves/hands"]
-		},
-		{
-			"group": "Variant - Purple Streak - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - Purple Streak - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/purple_streak/gloves/leather"]
-		},
-		{
-			"group": "Variant - Purple Streak - Gloves",
-			"name": "Bare hands",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/purple_streak/gloves/hands"]
-		},
-		{
-			"group": "Variant - Black Turtle Streak - Gloves",
-			"name": "Driving gloves (Default)",
-			"type": "select",
-			"enabledByDefault": true,
-			"tooltip": "Use driving gloves.",
-			"image": "drivinggloves.jpg"
-		},
-		{
-			"group": "Variant - Black Turtle Streak - Gloves",
-			"name": "Leather gloves",
-			"type": "select",
-			"tooltip": "Use leather gloves.",
-			"image": "leathergloves.jpg",
-			"contentFolders": ["variants/blackturtle/gloves/leather"]
-		},
-		{
-			"group": "Variant - Black Turtle Streak - Gloves",
-			"name": "Bare hands",
-			"type": "select",
-			"tooltip": "Bare hands.",
-			"image": "barehands.jpg",
-			"contentFolders": ["variants/blackturtle/gloves/hands"]
+			"id": "variant",
+			"type": "optionGroup",
+			"name": "Variant",
+			"options": [
+				{
+					"id": "variant-black",
+					"type": "optionGroup",
+					"name": "Black Streak",
+					"options": [
+						{
+							"id": "variant-black-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-black-gloves-driving",
+							"options": [
+								{
+									"id": "variant-black-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-black-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/black_streak/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-black-gloves-none",
+									"name": "Bare hands.",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/black_streak/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"black\") == Some(true)"
+				},
+				{
+					"id": "variant-blue",
+					"type": "optionGroup",
+					"name": "Blue Streak",
+					"options": [
+						{
+							"id": "variant-blue-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-blue-gloves-driving",
+							"options": [
+								{
+									"id": "variant-blue-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-blue-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/blue_streak/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-blue-gloves-none",
+									"name": "Bare hands.",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/blue_streak/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"blue\") == Some(true)"
+				},
+				{
+					"id": "variant-green",
+					"type": "optionGroup",
+					"name": "Green Streak",
+					"options": [
+						{
+							"id": "variant-green-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-green-gloves-driving",
+							"options": [
+								{
+									"id": "variant-green-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-green-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/green_streak/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-green-gloves-none",
+									"name": "Bare hands.",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/green_streak/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"green\") == Some(true)"
+				},
+				{
+					"id": "variant-whitesunset",
+					"type": "optionGroup",
+					"name": "White Sunset",
+					"options": [
+						{
+							"id": "variant-whitesunset-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-whitesunset-gloves-driving",
+							"options": [
+								{
+									"id": "variant-whitesunset-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-whitesunset-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/red_streak/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-whitesunset-gloves-none",
+									"name": "Bare hands",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/red_streak/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"whitesunset\") == Some(true)"
+				},
+				{
+					"id": "variant-purple",
+					"type": "optionGroup",
+					"name": "Purple Streak",
+					"options": [
+						{
+							"id": "variant-purple-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-purple-gloves-driving",
+							"options": [
+								{
+									"id": "variant-purple-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-purple-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/purple_streak/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-purple-gloves-none",
+									"name": "Bare hands",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/purple_streak/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"purple\") == Some(true)"
+				},
+				{
+					"id": "variant-blackturtle",
+					"type": "optionGroup",
+					"name": "Black Turtle Streak",
+					"options": [
+						{
+							"id": "variant-blackturtle-gloves",
+							"type": "selection",
+							"name": "Gloves",
+							"defaultValue": "variant-blackturtle-gloves-driving",
+							"options": [
+								{
+									"id": "variant-blackturtle-gloves-driving",
+									"name": "Driving gloves",
+									"description": "Use driving gloves.",
+									"image": "drivinggloves.jpg"
+								},
+								{
+									"id": "variant-blackturtle-gloves-leather",
+									"name": "Leather gloves",
+									"description": "Use leather gloves.",
+									"image": "leathergloves.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/blackturtle/gloves/leather"
+										]
+									}
+								},
+								{
+									"id": "variant-blackturtle-gloves-none",
+									"name": "Bare hands",
+									"description": "Bare hands.",
+									"image": "barehands.jpg",
+									"data": {
+										"contentFolders": [
+											"variants/blackturtle/gloves/hands"
+										]
+									}
+								}
+							]
+						}
+					],
+					"displayCondition": "mod_option(\"Jojje.SlimStreakSuits@1.3.0\", \"blackturtle\") == Some(true)"
+				}
+			]
 		}
 	]
 }
